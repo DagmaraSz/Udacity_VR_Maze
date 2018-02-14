@@ -136,11 +136,11 @@ public class Waypoint : MonoBehaviour
 
 	private void Idle()
 	{
-		float scale				= Mathf.Lerp(scale_idle_min, scale_idle_max, _animated_lerp);
-		Color color				= Color.Lerp(_color_origional, 	  color_hilight, _animated_lerp);
+		//float scale				= Mathf.Lerp(scale_idle_min, scale_idle_max, _animated_lerp);
+		//Color color				= Color.Lerp(_color_origional, 	  color_hilight, _animated_lerp);
 
-		_scale					= Mathf.Lerp(_scale, scale, lerp_idle);
-		_color					= Color.Lerp(_color, color, lerp_idle);
+		//_scale					= Mathf.Lerp(_scale, scale, lerp_idle);
+		//_color					= Color.Lerp(_color, color, lerp_idle);
 	}
 
 
