@@ -70,35 +70,36 @@ public class Waypoint : MonoBehaviour
 		switch(_state)
 		{
 			case State.Idle:
-				Idle();
-				
-				_state 		= occupied ? State.Occupied : _state;
+				Idle ();
+					
+				_state = occupied ? State.Occupied : _state;
 				break;
 
 			case State.Focused:
-				Focus();
+				Focus ();
 				break;
 
 			case State.Clicked:
-				Clicked();
+				Clicked ();
 
 				bool scaled = _scale >= scale_clicked_max * .95f;
-				_state 		= scaled ? State.Approaching : _state;
+				_state = scaled ? State.Approaching : _state;
 				break;
 
 			case State.Approaching:
-				Hide();	
+				Hide ();	
 
-				_state 		= occupied ? State.Occupied : _state;
+				_state = occupied ? State.Occupied : _state;
 				break;
+
 			case State.Occupied:
-				Hide();
+				Hide ();
 
 				_state = !occupied ? State.Idle : _state;
 				break;
 			
 			case State.Hidden:
-				Hide();
+				Hide ();
 				break;
 
 			default:
@@ -136,11 +137,11 @@ public class Waypoint : MonoBehaviour
 
 	private void Idle()
 	{
-		//float scale				= Mathf.Lerp(scale_idle_min, scale_idle_max, _animated_lerp);
-		//Color color				= Color.Lerp(_color_origional, 	  color_hilight, _animated_lerp);
+		float scale				= Mathf.Lerp(scale_idle_min, scale_idle_max, _animated_lerp);
+		Color color				= Color.Lerp(_color_origional, 	  color_hilight, _animated_lerp);
 
-		//_scale					= Mathf.Lerp(_scale, scale, lerp_idle);
-		//_color					= Color.Lerp(_color, color, lerp_idle);
+		_scale					= Mathf.Lerp(_scale, scale, lerp_idle);
+		_color					= Color.Lerp(_color, color, lerp_idle);
 	}
 
 
