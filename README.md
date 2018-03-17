@@ -6,8 +6,8 @@ Built for an Android phone and a mobile VR headset like Google Cardboard.
 
 Find your way around the maze I built, collect coins, marvel at statues and get the key to open the door. You can move around by clicking the floating cubes. Good luck!
 
-![Screenshot of the maze entrance](screenshot-maze.jpg)
-![Screenshot of the maze general](screenshot-maze2.jpg)
+![Screenshot of the maze entrance](screenshot-maze.png)
+![Screenshot of the maze general](screenshot-maze2.png)
 
 If you'd like to try it out, download the "Build.zip" folder, extract the .apk file and add it to your Android phone (if you've never installed an app from outside the app store, here's some further guidance: https://www.cnet.com/how-to/how-to-install-apps-outside-of-google-play/).
 
